@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Assigment11Oct.hashMainDemo</StartupObject>
+    <StartupObject>Assigment11Oct.ArrayListMain</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />

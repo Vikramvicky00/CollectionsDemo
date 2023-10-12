@@ -12,7 +12,7 @@ namespace Assigment11Oct
             arrayList.Add(1);
             arrayList.Add(2);
             arrayList.Add("V");
-            arrayList.Add(4.5);
+            arrayList.Add(4);
             arrayList.Add("I");
             arrayList.Add(6.76);
             arrayList.Add("K");
@@ -25,9 +25,20 @@ namespace Assigment11Oct
                 Console.WriteLine(item);
             }
             Console.WriteLine("------------------------");
-            int i =arrayList.BinarySearch("I");
-            arrayList.RemoveAt(i);
-            Console.WriteLine("After Removing..");
+            
+            int i=arrayList.IndexOf("V");
+            //Console.WriteLine(i);
+            if (i == -1)
+            {
+                Console.WriteLine("Element not found");
+               
+            }
+            else
+            {
+                Console.WriteLine($"Element {arrayList[i]} Removed..");
+                arrayList.RemoveAt(i);
+            }
+
             Console.WriteLine("------------------------");
             foreach (var item in arrayList)
             {
